@@ -248,6 +248,16 @@ public class WebDriverUtils {
 			driver.switchTo().defaultContent();
 		}
 		
+		public void enableCheckbox(By loc) {
+			WebElement e = find(loc);
+			if(!e.isSelected())
+			{
+				e.click();
+			}
+			ATUReports.add("Select Checkbox / Radio Button", loc.toString(), LogAs.PASSED, new CaptureScreen(
+                    ScreenshotOf.BROWSER_PAGE));
+		}
+			
 		public void exit() {
 			try
 			{

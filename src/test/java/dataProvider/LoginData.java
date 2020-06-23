@@ -10,6 +10,22 @@ public class LoginData {
 		return ExcelUtils.getData("TestData.xls", "NegativeLogin");
 	}
 	
+	//Test Case - UNF_078
+	
+	@DataProvider
+	public Object[][] createCategory(){
+		return ExcelUtils.getData("TestData.xls", "CreateCategory");
+	}
+		
+	//Test Case - UNF_079
+	@DataProvider
+	public Object[][] negativeTest(){
+		return ExcelUtils.getData("TestData.xls","NegativeTest");
+			
+			
+	}
+	
+	
 	@DataProvider
 	public Object[][] CreatePatient(){
 		return new Object[][] { 

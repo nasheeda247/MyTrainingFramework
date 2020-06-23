@@ -30,7 +30,7 @@ public class TestSetup {
 	
 	@AfterClass
 	public void close() {
-		//wdu.exit();
+		wdu.exit();
 	}
 	
 //	@AfterSuite
